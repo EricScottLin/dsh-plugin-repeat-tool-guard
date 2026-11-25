@@ -70,7 +70,7 @@ I read the sources and did not install these:
 
 They each cover “exactly the same arguments”; this incident was “different-looking arguments, same target”, plus unattended operation.
 
-In total I compared three groups — the official reminder, `@goodandready/dsh-agent-loop-guard`, and the exact-argument family (`dsh-loop-breaker` / `dsh-repeat-stop` / `dsh-brake`) — and none covered this shape.
+In total I evaluated three groups — the official reminder, `@goodandready/dsh-agent-loop-guard`, and the exact-argument family (`dsh-loop-breaker` / `dsh-repeat-stop` / `dsh-brake`) — and none covered this shape.
 
 ### Conclusion
 
