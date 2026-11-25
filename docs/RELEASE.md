@@ -8,6 +8,15 @@
   https://github.com/EricScottLin/dsh-plugin-repeat-tool-guard/releases/tag/v1.0.0
 - `npm test`: 10/10 pass; `npm pack --dry-run`: 9 files, 12.3 kB.
 
+## Verified install paths
+
+- GitHub source install tested in a scratch project:
+  `pnpm add github:EricScottLin/dsh-plugin-repeat-tool-guard` → 1.0.0,
+  `import('dsh-plugin-repeat-tool-guard')` → `repeat-tool-guard` / `apply` function.
+- Release tarball downloaded and inspected: 9 files, including `index.js`,
+  `cordis.patch.yml`, `package.json`, both READMEs, `CHANGELOG.md`, `LICENSE`,
+  `docs/POST.md`, `docs/VERIFY.md`.
+
 ## Blocked: npm publish
 
 This machine has no npm credentials (`npm whoami` → ENEEDAUTH), so the package
