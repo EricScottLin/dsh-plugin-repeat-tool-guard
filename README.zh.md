@@ -64,16 +64,16 @@ https://example.com/a/audit.ts.sig
 
 ## 安装
 
-从 npm：
-
-```sh
-dsh plugin --profile web add dsh-plugin-repeat-tool-guard
-```
-
-从 GitHub：
+从 GitHub（当前可用）：
 
 ```sh
 dsh plugin --profile web add github:EricScottLin/dsh-plugin-repeat-tool-guard
+```
+
+从 npm（1.0.0 发布到公共 registry 后可用）：
+
+```sh
+dsh plugin --profile web add dsh-plugin-repeat-tool-guard
 ```
 
 安装后重启 `dsh web`（或让 profile 热重载）生效。插件不带 UI、不注册新工具，只在后台 hook 上工作。

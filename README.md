@@ -58,14 +58,16 @@ Subagents have their own budgets and counters.
 
 ## Install
 
-```sh
-dsh plugin --profile web add dsh-plugin-repeat-tool-guard
-```
-
-or from GitHub:
+From GitHub (available now):
 
 ```sh
 dsh plugin --profile web add github:EricScottLin/dsh-plugin-repeat-tool-guard
+```
+
+From npm (once 1.0.0 is published to the public registry):
+
+```sh
+dsh plugin --profile web add dsh-plugin-repeat-tool-guard
 ```
 
 Restart `dsh web` (or let the profile hot-reload) after installing. The plugin ships no UI and registers no tools.
