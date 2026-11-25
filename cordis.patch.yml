@@ -1,0 +1,15 @@
+# Bundle patch for dsh-plugin-repeat-tool-guard.
+#
+# Installed as a profile bundle; inserts the guard row. All values are the
+# defaults documented in README.zh.md and may be overridden by a later profile
+# patch layer.
+- insert:
+    - id: repeat-tool-guard
+      name: dsh-plugin-repeat-tool-guard
+      config:
+        perTarget: 4
+        maxFailures: 2
+        maxToolCallsPerTurn: 60
+        maxFetchesPerTurn: 30
+        maxTurnMinutes: 15
+        maxFetchesPerHour: 120
