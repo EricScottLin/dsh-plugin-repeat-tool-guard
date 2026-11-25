@@ -46,5 +46,6 @@ remove it (npm is the preferred install path).
 
 ## Warning post
 
-Draft: `docs/POST.md`. Venue suggestion: a DeepSeek Harness GitHub Discussion
-(“Show and tell”); do not post without the account owner's approval.
+Drafts: `docs/POST.md` (English) and `docs/POST.zh.md` (Chinese). Venue
+suggestion: a DeepSeek Harness GitHub Discussion (“Show and tell”); do not
+post without the account owner's approval.
