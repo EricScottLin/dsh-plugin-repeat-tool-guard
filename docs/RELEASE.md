@@ -17,32 +17,29 @@
   `cordis.patch.yml`, `package.json`, both READMEs, `CHANGELOG.md`, `LICENSE`,
   `docs/POST.md`, `docs/VERIFY.md`.
 
-## Blocked: npm publish
+## npm
 
-This machine has no npm credentials (`npm whoami` → ENEEDAUTH), so the package
-is not on the public npm registry yet. Publishing requires the account owner:
+Published `dsh-plugin-repeat-tool-guard@1.0.0` to the public registry on
+2026-11-27. npm's staged publishing created a `0.0.0-stage` placeholder first;
+`latest` now points at `1.0.0`, and the placeholder is deprecated.
 
 ```sh
-cd /data/dsh/workspace/dsh/dsh-plugin-repeat-tool-guard
-npm login --registry=https://registry.npmjs.org
-npm publish --registry=https://registry.npmjs.org --access public
+dsh plugin --profile web add dsh-plugin-repeat-tool-guard
 ```
 
-After that, the market index (which only indexes npm-published plugins) can see
-it. Until then, the GitHub Release tarball is the install path.
+The market index can now index the package once the catalog is rebuilt.
 
 ## Market submission
 
 The awesome-dsh-plugin list requires the repository to be **at least 1 day old**
-(automatic CI check). Do not open the PR before 2026-11-26.
+(automatic CI check). The repo was created 2026-11-25, so it is eligible now.
 
 Entry file to add to `awesome-dsh-plugin/awesome-dsh-plugin`:
 
 `data/plugins/EricScottLin__dsh-plugin-repeat-tool-guard.yml`
 
 Copy the contents of `market/awesome-dsh-plugin.yml`. Open a PR that adds only
-that file. If npm publish is still blocked, keep the `tarball:` field; otherwise
-remove it (npm is the preferred install path).
+that file. npm is published, so the entry has no `tarball:` field.
 
 ## Warning post
 
