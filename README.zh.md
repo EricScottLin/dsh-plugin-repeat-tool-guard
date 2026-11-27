@@ -9,7 +9,13 @@
 - 措施性质：**host 侧运行时兜底**，不是提示词，不依赖模型自觉，也不修改 DSH 核心。
 - 零运行时依赖，不带 UI，不注册新工具。
 
-安装（当前从 GitHub）：
+安装（npm 推荐）：
+
+```sh
+dsh plugin --profile web add dsh-plugin-repeat-tool-guard
+```
+
+从 GitHub 安装：
 
 ```sh
 dsh plugin --profile web add github:EricScottLin/dsh-plugin-repeat-tool-guard

@@ -9,7 +9,13 @@
 - **Runtime fallback on the host side** — not a prompt, not a model fix, no core changes.
 - No runtime dependencies, no UI, no new tools.
 
-Install (from GitHub today):
+Install (npm recommended):
+
+```sh
+dsh plugin --profile web add dsh-plugin-repeat-tool-guard
+```
+
+From GitHub:
 
 ```sh
 dsh plugin --profile web add github:EricScottLin/dsh-plugin-repeat-tool-guard

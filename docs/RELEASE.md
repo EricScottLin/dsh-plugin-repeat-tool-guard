@@ -46,3 +46,28 @@ that file. npm is published, so the entry has no `tarball:` field.
 Drafts: `docs/POST.md` (English) and `docs/POST.zh.md` (Chinese). Venue
 suggestion: a DeepSeek Harness GitHub Discussion (“Show and tell”); do not
 post without the account owner's approval.
+
+## Market PR status
+
+Branch `add-dsh-plugin-repeat-tool-guard` has been pushed to the fork
+`EricScottLin/awesome-dsh-plugin` with the entry file:
+
+`data/plugins/EricScottLin__dsh-plugin-repeat-tool-guard.yml`
+
+`gh pr create` was refused by the current fine-grained PAT:
+
+```
+GraphQL: Resource not accessible by personal access token (createPullRequest)
+```
+
+Open the PR from the fork in the browser (one click, uses the owner's web
+session):
+
+https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/compare/main...EricScottLin:add-dsh-plugin-repeat-tool-guard?expand=1
+
+The entry has no `tarball:` field because npm 1.0.0 is published.
+
+## npm
+
+`dsh-plugin-repeat-tool-guard@1.0.0` is public; `npm install` + `import` tested.
+The `0.0.0-stage` placeholder created by npm staged publishing is deprecated.
